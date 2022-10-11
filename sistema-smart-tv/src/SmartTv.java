@@ -21,10 +21,17 @@ public class SmartTv {
         volume--;
     }
 
-    public void tvPadrao(){
-        //Retorna todos os status para padrão
-        boolean ligada = false;
-        int canal = 1;
-        int volume = 25;
+    public void aumentarCanal(){
+        canal += 1;
     }
+
+    
+    public void diminuirCanal(){
+        canal -= 1;
+    }
+
+    public void mudarCanal(int canalNovo){
+            canal = canalNovo;
+    }
+    
 }
